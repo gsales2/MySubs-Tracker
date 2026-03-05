@@ -1,41 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>MySubs Tracker | Login</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>MySubs Tracker | Login</title>
 </head>
+
 <body>
-    <header></header>
+  <header></header>
 
-    <main class="auth-container">
-        <header class="auth-header">
-            <h1>MySubs Tracker</h1>
-            <p id="auth-subtitle">Gerenciar suas assinaturas em um só lugar</p>
-        </header>
+  <main>
+    <header class="header-login">
+      <div class="icon-login"></div>
+      <h2>LOGIN</h2>
+    </header>
+    <section class="main-login">
+      <form id="form-login">
+        <div class="input-group toggle-visi">
+          <label for="name">Nome</label>
+          <input type="text" id="name" placeholder="Digite seu nome" required>
+        </div>
+        <div class="input-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="Digite seu e-mail" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Senha</label>
+          <input type="password" id="password" placeholder="Digite sua senha" required>
+        </div>
+        <button type="submit" id="btn-primary">Login</button>
+      </form>
+      
+      <div class="footer-login">
+        <p id="toggle-text">Não tem uma conta? <span id="btn-toggle">Cadastrar</span></p>
+      </div>
+    </section>
+    
+  </main>
 
-        <section class="auth-box">
-            <form id="auth-form">
-                <div class="input-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="Digite seu e-mail" required>
-                </div>
-                <div class="input-group">
-                    <label for="password">Senha</label>
-                    <input type="password" id="password" placeholder="Digite sua senha" required>
-                </div>
+  <footer></footer>
 
-                <button type="submit" id="btn-primary">Entrar</button>
-            </form>
-            <div class="auth-footer">
-                <p id="toggle-text">Não tem uma conta? <span id="btn-toggle">Cadastre-se</span></p> 
-            </div>
-        </section>
-    </main>
-
-    <footer></footer>
-
-    <script type="module" src="js/auth.js"></script>
+  <script type="module" src="js/auth.js"></script>
 </body>
+
 </html>
