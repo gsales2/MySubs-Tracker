@@ -4,15 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>MySubs Tracker</title>
+    <title>MySubs Tracker | Login</title>
 </head>
 <body>
     <header></header>
 
-    <main></main>
+    <main class="auth-container">
+        <header class="auth-header">
+            <h1>MySubs Tracker</h1>
+            <p id="auth-subtitle">Gerenciar suas assinaturas em um só lugar</p>
+        </header>
+
+        <section class="auth-box">
+            <form id="auth-form">
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua senha" required>
+                </div>
+
+                <button type="submit" id="btn-primary">Entrar</button>
+            </form>
+            <div class="auth-footer">
+                <p id="toggle-text">Não tem uma conta? <span id="btn-toggle">Cadastre-se</span></p> 
+            </div>
+        </section>
+    </main>
 
     <footer></footer>
 
-    <script src="js/main.js"></script>
+    <script type="module" src="js/auth.js"></script>
 </body>
 </html>
