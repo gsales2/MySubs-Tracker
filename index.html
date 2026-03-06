@@ -12,23 +12,65 @@
   <header></header>
 
   <main>
-    <header class="header-login">
+    <div class="form-container">
+      <p class="title">Login</p>
+      <form class="form">
+        <div class="input-group">
+          <input type="text" name="name" id="name" required/>
+          <label for="name" class="label-login">Nome</label>
+          <div class="underline"></div>
+        </div>
+        <div class="input-group">
+          <input type="email" name="email" id="email" required/>
+          <label for="email" class="label-login">E-mail</label>
+          <div class="underline"></div>
+        </div>
+        <div class="input-group">
+          <input type="password" name="password" id="password" required/>
+          <label for="password" class="label-login">Senha</label>
+          <div class="underline"></div>
+        </div>
+        <button class="sign">Entrar</button>
+      </form>
+      <div class="social-message">
+        <div class="line"></div>
+        <p class="message">Login por outros meios</p>
+        <div class="line"></div>
+      </div>
+      <div class="social-icons">
+        <button aria-label="Log in with Google" class="icon">
+          <svg xmlns="https://www.w3.org/TR/SVG2/" viewBox="0 0 32 32" class="w-5 h-5 fill-current"></svg>
+        </button>
+        <button aria-label="Log in with GitHub" class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current"></svg>
+        </button>
+      </div>
+      <p class="signup">
+        Não tem conta?
+        <a rel="noopener noreferrer" href="#" class="">Registre-se</a>
+      </p>
+    </div>
+
+    <!-- <header class="header-login">
       <div class="icon-login"></div>
       <h2>LOGIN</h2>
     </header>
     <section class="main-login">
       <form id="form-login">
         <div class="input-group toggle-visi">
-          <label for="name">Nome</label>
-          <input type="text" id="name" placeholder="Digite seu nome" required>
+          <input type="text" id="name" required>
+          <label for="name" class="label-login">Nome</label>
+          <div class="underline"></div>
         </div>
         <div class="input-group">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" placeholder="Digite seu e-mail" required>
+          <input type="email" id="email" required>
+          <label for="email" class="label-login">E-mail</label>
+          <div class="underline"></div>
         </div>
         <div class="input-group">
-          <label for="password">Senha</label>
-          <input type="password" id="password" placeholder="Digite sua senha" required>
+          <input type="password" id="password" required>
+          <label for="password" class="label-login">Senha</label>
+          <div class="underline"></div>
         </div>
         <button type="submit" id="btn-primary">Login</button>
       </form>
@@ -36,8 +78,7 @@
       <div class="footer-login">
         <p id="toggle-text">Não tem uma conta? <span id="btn-toggle">Cadastrar</span></p>
       </div>
-    </section>
-    
+    </section> -->
   </main>
 
   <footer></footer>
