@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DashBoard</title>
+</head>
+
+<body>
+    <header class="dash-header">
+        <div class="logo"><i class="fas fa-wallet"></i> MySubs <span>Tracker</span></div>
+        <div class="user-menu">
+            <span id="user-display-name-top">Carregando...</span>
+            <button id="btn-logout" title="Sair">
+                <i class="fas fa-sign-out-alt"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="dash-container">
+    <section class="welcome-section">
+        <div class="welcome-text">
+            <h2>Olá, <span id="user-display-name">...</span>! 👋</h2>
+            <p>Seu resumo financeiro de assinaturas.</p>
+        </div>
+    </section>
+
+    <div class="stats-grid">
+        <div class="stat-box">
+            <div class="stat-icon"><i class="fas fa-coins"></i></div>
+            <div class="stat-info">
+                <p>Total Mensal</p>
+                <h3 id="valor-total">R$ 0,00</h3>
+            </div>
+        </div>
+        
+        <div class="stat-box">
+            <div class="stat-icon"><i class="fas fa-list-ul"></i></div>
+            <div class="stat-info">
+                <p>Ativas</p>
+                <h3 id="total-subs">0</h3>
+            </div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+            <div class="stat-info">
+                <p>Próximo Vencimento</p>
+                <h3 id="next-sub">--/--</h3>
+            </div>
+        </div>
+    </div>
+
+    <section class="subs-section">
+        <div class="section-header">
+            <h3>Suas Assinaturas</h3>
+        </div>
+        <div id="subs-list" class="subs-grid">
+            <div class="empty-state">
+                <p>Nenhuma assinatura cadastrada ainda.</p>
+            </div>
+        </div>
+    </section>
+
+    <button class="btn-add-sub" id="open-modal">
+        <i class="fas fa-plus"></i> <span>Nova Assinatura</span>
+    </button>
+</main>
+
+<script type="module" src="js/main.js"></script>
+</body>
+
+</html>

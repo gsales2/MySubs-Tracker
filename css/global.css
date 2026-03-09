@@ -21,8 +21,5 @@ body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     background-color: var(--bg);
     color: var(--text);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
 }
