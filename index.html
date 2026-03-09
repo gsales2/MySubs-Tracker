@@ -5,7 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>MySubs Tracker | Login</title>
 </head>
 
@@ -16,18 +18,18 @@
     <div class="form-container">
       <p class="title">Login</p>
       <form class="form">
-        <div class="input-group toggle-login">
-          <input type="text" name="name" id="name" required />
+        <div class="input-group toggle-login d-none">
+          <input type="text" name="name" id="name" placeholder=" "/>
           <label for="name" class="label-login">Nome</label>
           <div class="underline"></div>
         </div>
         <div class="input-group">
-          <input type="email" name="email" id="email" required />
+          <input type="email" name="email" id="email" placeholder=" " required />
           <label for="email" class="label-login">E-mail</label>
           <div class="underline"></div>
         </div>
         <div class="input-group">
-          <input type="password" name="password" id="password" required />
+          <input type="password" name="password" id="password" placeholder=" " required />
           <label for="password" class="label-login">Senha</label>
           <div class="underline"></div>
         </div>
@@ -40,15 +42,23 @@
       </div>
       <div class="social-icons">
         <button aria-label="Log in with Google" class="icon">
-          <svg xmlns="https://www.w3.org/TR/SVG2/" viewBox="0 0 32 32" class="w-5 h-5 fill-current"></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+            <path
+              d="M16.318 13.714v5.484h9.078c-0.37 2.354-2.745 6.901-9.078 6.901-5.458 0-9.917-4.521-9.917-10.099s4.458-10.099 9.917-10.099c3.109 0 5.193 1.318 6.38 2.464l4.339-4.182c-2.786-2.599-6.396-4.182-10.719-4.182-8.844 0-16 7.151-16 16s7.156 16 16 16c9.234 0 15.365-6.49 15.365-15.635 0-1.052-0.115-1.854-0.255-2.651z">
+            </path>
+          </svg>
         </button>
         <button aria-label="Log in with GitHub" class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current"></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+            <path
+              d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.016-1.651-0.016-2.995-3.954 0.724-4.964-0.917-5.276-1.797-0.177-0.453-0.938-1.813-1.604-2.182-0.552-0.302-1.339-1.026-0.016-1.041 1.24-0.021 2.125 1.141 2.422 1.615 1.417 2.396 3.708 1.714 4.609 1.312 0.146-1.026 0.552-1.714 1.005-2.109-3.547-0.401-7.271-1.771-7.271-7.885 0-1.745 0.625-3.177 1.646-4.292-0.161-0.406-0.714-2.031 0.161-4.234 0 0 1.344-0.432 4.401 1.641 1.281-0.359 2.651-0.542 4.016-0.547 1.359 0.005 2.729 0.188 4.016 0.547 3.057-2.083 4.401-1.641 4.401-1.641 0.875 2.203 0.323 3.828 0.161 4.234 1.026 1.115 1.646 2.531 1.646 4.292 0 6.13-3.74 7.484-7.292 7.88 0.573 0.495 1.083 1.458 1.083 2.943 0 2.125-0.021 3.839-0.021 4.365 0 0.427 0.286 0.932 1.104 0.771 6.339-2.12 10.917-8.109 10.917-15.177 0-8.833-7.161-16-16-16z">
+            </path>
+          </svg>
         </button>
       </div>
-      <p class="signup">
+      <p class="signup" id="signup-container">
         Não tem conta?
-        <a rel="noopener noreferrer" href="#" class="">Registre-se</a>
+        <a rel="noopener noreferrer" href="#">Registre-se</a>
       </p>
     </div>
   </main>
